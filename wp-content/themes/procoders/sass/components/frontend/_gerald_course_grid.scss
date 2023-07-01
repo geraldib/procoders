@@ -1,0 +1,104 @@
+.course-grid {
+    background: $white;
+    padding-top: 75px;
+    padding-bottom: 100px;
+    @include flex-container(row, center, flex-start);
+    &__container {
+        @include flex-container(column, center, center);
+        width: 100%;
+    }
+    &__title {
+        font-family: Barlow Bold;
+        font-size: 64px;
+        line-height: 76px;
+        color: $textDark;
+        margin: 0;
+    }
+    &__filter {
+        @include col-width(3);
+        margin-top: 40px;
+        border: 2px solid #3D3AD4;
+        border-radius: 24px;
+        height: 36px;
+        padding: 2px;
+        max-width: 340px;
+        @include flex-container(row, space-between, center);
+    }
+    &__state {
+        @include col-width(6);
+        font-family: Barlow Regular;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+        border-radius: 24px;
+        height: 100%;
+        cursor: pointer;
+        @include flex-container(row, center, center);
+        &--active {
+            color: $white; 
+            background: $btnBgRed;
+        }
+    }
+    &__courses {
+        margin-top: 15px;
+        @include flex-container(row, space-between, flex-start);
+        flex-wrap: wrap;
+        @include col-width(10);
+    }
+    &__card {
+        @include flex-container(column, center, center);
+        width: calc(100% / 12 * 3.5 - 86px);
+        min-height: 270px;
+        padding: 40px;
+        margin-top: 60px;
+        border-radius: 10px;
+        border-width: 3px;
+        border-style: solid;
+        border-color: $btnBgBlue;
+        &-imagewhite {
+            display: none;
+        }
+        &-image {
+            display: block;
+        }
+        p {
+            margin: 27px 0 0 0;
+            text-align: center;
+            font-family: Barlow Regular;
+            font-size: 20px;
+            line-height: 24px;
+            color: $textDark;
+            border-radius: 24px;
+        }
+        &:hover {
+            width: calc(100% / 12 * 3.5 - 80px);
+            border: none;
+            background: $gradientBg;
+            .course-grid__card-imagewhite {
+                display: block;
+            }
+            .course-grid__card-image {
+                display: none;
+            }
+            p {
+                color: $white;
+            }
+        }
+    }
+    &__load {
+        @include flex-container(row, center, center);
+        margin-top: 75px;
+        background: $btnBgRed;
+        border-radius: 24px;
+        color: $white;
+        font-family: Barlow Regular;
+        font-size: 20px;
+        line-height: 24px;
+        width: 263px;
+        height: 60px;
+        cursor: pointer;
+        &--disabled {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "gerald-gutenberg-blocks",
+    "version": "1.0.0",
+    "description": "Gutenberg Blocks developed by Gerald",
+    "main": "index.js",
+    "scripts": {
+      "start": "wp-scripts start",
+      "build": "wp-scripts build"
+    },
+    "author": "Gerald Ibra",
+    "license": "ISC",
+    "homepage": "https://www.linkedin.com/in/gerald-ibra-15a722168",
+    "devDependencies": {
+      "@wordpress/scripts": "^12.6.0"
+    },
+    "dependencies": {
+      "@wordpress/blocks": "^6.25.0",
+      "@wordpress/i18n": "^3.17.0",
+      "watch": "^1.0.2"
+    }
+  }

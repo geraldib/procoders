@@ -1,0 +1,19 @@
+@mixin flex-container($direction: row, $justify: space-between, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin col-width($colNr) {
+    width: calc(100% / 12 * $colNr);
+}
+
+@mixin block-editor() {
+    border: 1px solid #007B69;
+    border-radius: 6px;
+    padding: 20px;
+    background-color: #EDF5F5;
+    text-align: center;
+    color: #2A363B;
+}

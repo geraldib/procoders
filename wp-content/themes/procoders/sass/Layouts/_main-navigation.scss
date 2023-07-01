@@ -1,0 +1,39 @@
+.main-navigation{
+    @include col-width(10);
+    margin: 0 auto;
+    padding: 18px 0;
+    box-shadow: $borderShadowBottom;
+    @include flex-container(row, space-between, center);
+    &__logo {
+        font-family: Barlow Bold;
+        padding: 16px 44px;
+        font-size: 32px;
+        color: $white;
+        background: $logobg;
+    }
+    &__menu {
+        @include flex-container(row, space-between, center);
+    }
+    ul {
+        list-style: none;
+        @include flex-container(row, space-between, center);
+        margin-right: 8px;
+        a {
+            color: $textBlack;
+            text-decoration: none;
+            font-family: Barlow Bold;
+            font-size: 16px;
+            margin-right: 28px;
+            cursor: pointer;
+        }
+    }
+    &__btn {
+        padding: 16px 44px;
+        background-color: $btnBgBlue;
+        color: $white;
+        text-decoration: none;
+        font-family: Barlow Bold;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}

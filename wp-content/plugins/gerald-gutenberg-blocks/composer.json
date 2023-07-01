@@ -1,0 +1,8 @@
+{
+    "autoload": {
+      "psr-4": {
+        "Gerald\\GutenbergBlocks\\Blocks\\": "gerald-gutenberg-blocks/src/blocks"
+      }
+    }
+}
+  

@@ -1,0 +1,7 @@
+.gerald-course-grid {
+    @include block-editor();
+
+    h2 {
+        color: #007B69;
+    }
+}

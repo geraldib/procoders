@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+@import './Variables/fonts';
+@import './Variables/colors';
+
+@import './Mixins/mixins';
+
+@import './Layouts/main-navigation';
+@import './Layouts/nav-popup';
+
+@import './components/frontend/gerald_hero';
+@import './components/frontend/gerald_course_grid';

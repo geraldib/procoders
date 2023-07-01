@@ -1,0 +1,121 @@
+.nav-popup {
+    position: absolute;
+    right: 142px;
+    top: 82px;
+    max-width: 968px;
+    border: $border;
+    box-shadow: $borderShadow;
+    border-radius: 24px;
+    z-index: 2;
+    background: white;
+    &__top {
+        @include flex-container(row, space-between, flex-start);
+        padding: 32px;
+    }
+    &__data {
+        &-learning {
+            @include flex-container(row, flex-start, center);
+        }
+        &-blog {
+            @include flex-container(row, flex-start, center);
+        }
+        &-event {
+            @include flex-container(row, flex-start, center);
+        }
+    }
+    &__learningtitle {
+        color: $textBlack;
+        font-family: Barlow Bold;
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 16px;
+    }
+    &__blogtitle {
+        color: $textBlack;
+        font-family: Barlow Bold;
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 16px; 
+    }
+    &__left {
+        @include col-width(3.5);
+        ul {
+            list-style: none;
+            li {
+                margin-top: 16px;
+            }
+            a {
+                color: $textDark;
+                text-decoration: none;
+                font-family: Barlow Light;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+    }
+    &__eventtitle {
+        color: $textBlack;
+        font-family: Barlow Bold;
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 16px;
+    }
+    &__right {
+        @include col-width(7.5);
+        padding-left: 32px;
+        border-left: $border;
+        ul {
+            margin-top: 0;
+            list-style: none;
+            @include flex-container(row, space-between, flex-start);
+            flex-wrap: wrap;
+            li {
+                @include col-width(5.5);
+                margin-top: 16px;
+            }
+            a {
+                color: $textHighlight;
+                font-family: Barlow Bold;
+                text-decoration: none;
+                font-size: 20px;
+            }
+        }
+    }
+    &__description {
+        color: $textDark;
+        font-family: Barlow Light;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    &__bottom {
+        @include flex-container(row, space-between, center);
+        border-top: $border;
+        background: $popupBotBackground;
+        padding: 16px 32px;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+    }
+    &__topline {
+        color: $textBlack;
+        font-family: Barlow Bold;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+    }
+    &__subline {
+        color: $textDark;
+        font-family: Barlow Light;
+        font-size: 16px;
+        margin: 5px 0 0 0;
+    }
+    &__cta {
+        font-family: Barlow Bold;
+        padding: 16px 20px;
+        background: $btnBgBlue;
+        font-size: 20px;
+        line-height: 24px;
+        color: $white;
+        box-shadow: $textShadow;
+        text-decoration: none;
+    }
+}
